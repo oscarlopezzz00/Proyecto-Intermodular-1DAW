@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/public/en/head :: head('The House - Casa Rural', 'The House')}"></head>
+
+<body>
+
+    <link rel="stylesheet" th:href="@{/css/public/casa.css}">
+    <header th:replace="~{fragments/public/en/header :: header}"></header>
+
+        <main>
+            <!--Introduccion-->
+            <section class="seccion-intro">
+                <h1 class="intro-titulo">The House</h1>
+                <p class="intro-descripcion">Discover the charm of our rural house, a place where nature and comfort
+                    come together to offer you an unforgettable stay.</p>
+            </section>
+
+            <!--imagen grande portada-->
+            <div class="imagen-destacada-contenedor">
+                <img class="imagen-destacada" src="/img/laCasa/casa-principal.jpg" alt="Vista casa rural">
+            </div>
+
+            <!--parte titulo encanto rural-->
+            <section class="seccion-encanto">
+                <h2 class="encanto-titulo">Rural Charm</h2>
+                <div class="encanto-contenedor">
+
+                    <!--bloque encanto rural-->
+                    <div class="encanto-bloque">
+                        <h3 class="encanto-subtitulo">Rural Charm</h3>
+                        <p class="encanto-texto">A stone house with traditional architecture, carefully restored and
+                            decorated to make your stay as comfortable as possible. Living room with fireplace, wooden windows and unique views
+                            from the garden</p>
+                    </div>
+
+                    <!--bloque salon-->
+                    <div class="encanto-bloque">
+                        <h3 class="encanto-subtitulo">Cosy living room with fireplace</h3>
+                        <p class="encanto-texto">The heart of the house. A warm space to relax after a day of hiking,
+                            enjoy good company and feel the warmth of a wood-burning fireplace.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--bloque comodidades-->
+            <section class="seccion-comodidades">
+                <h2 class="comodidades-titulo">Amenities</h2>
+                <p class="comodidades-descripcion">Fully equipped so you have everything you need during your stay</p>
+                <ul class="comodidades-lista">
+                    <li class="comodidades-elemento">Free Wifi and TV</li>
+                    <li class="comodidades-elemento">Fully equipped kitchen</li>
+                    <li class="comodidades-elemento">Bed linen and towels included</li>
+                    <li class="comodidades-elemento">Outdoor area with barbecue</li>
+                </ul>
+            </section>
+
+
+            <!--Galeria de imagenes?-->
+            <section class="seccion-galeria">
+                <h2 class="galeria-titulo">Image Gallery</h2>
+                <div class="galeria-contenedor">
+                    <div class="galeria-tarjeta" th:each="imagen : ${imagenes}">
+                        <img class="galeria-imagen" th:src="${imagen.url}" alt="Imagen">
+                        <p class="galeria-descripcion" th:text="${imagen.descripcionEn}"></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    <footer th:replace="~{fragments/public/en/footer :: footer}"></footer>
+
+</body>
+</html>

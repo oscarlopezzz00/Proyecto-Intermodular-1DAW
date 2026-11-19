@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('Política de Cookies', 'Politica de Cookies')}"></head>
+
+<body>
+
+    <link rel="stylesheet" th:href="@{/css/public/cookies.css}">
+    <header th:replace="~{fragments/public/en/header :: header}"></header>
+
+    <main>
+        <!--intro cookie-->
+        <section class="seccion-cookies">
+            <h1 class="cookies-titulo">Cookie Policy</h1>
+            <p class="cookies-introduccion">The purpose of this cookie policy is to inform users of the Casa
+                Jorcanvi website about the use of cookies and similar registered technologies.</p>
+
+            <!-- que son las cookies -->
+            <div class="cookies-bloque">
+                <h2 class="cookies-subtitulo">What are Cookies?</h2>
+                <p class="cookies-texto">Cookies are small files that websites install on your device to store data
+                    and improve your browsing experience.</p>
+            </div>
+
+            <!-- los tipos de cookies -->
+            <div class="cookies-bloque">
+                <h2 class="cookies-subtitulo">Types of Cookies Used</h2>
+                <ul class="cookies-lista">
+                    <!--cookies esenciales-->
+                    <li class="cookies-elemento">
+                        <strong>Essential Cookies:</strong> Necessary for the basic functioning of the website.
+                    </li>
+                    <!--cokies analiticas-->
+                    <li class="cookies-elemento">
+                        <strong>Analytical Cookies:</strong>Allow us to analyse website usage to improve its
+                        performance.
+                    </li>
+                    <!--cookies preferencia-->
+                    <li class="cookies-elemento">
+                        <strong>Preference Cookies:</strong> Store your preferences to personalise your experience
+                        (for example, language, location, etc.)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- la gestion de las cookies -->
+            <div class="cookies-bloque">
+                <h2 class="cookies-subtitulo">Cookie Management</h2>
+                <p class="cookies-texto">Users can control and delete cookies through their browser settings.
+                    Please note that disabling certain cookies may affect the functionality of the website.</p>
+
+                <button id="boton-aceptar" class="cookies-boton">Accept Cookies</button>
+                <p id="mensaje-confirmacion" class="cookies-confirmacion">You have accepted the use of cookies</p>
+
+                <p class="cookies-texto">You can change your cookie settings at any time through your browser
+                    configuration.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/public/en/footer :: footer}"></footer>
+    <script th:src="@{/js/cookies.js}"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+/*introduccion*/
+.seccion-intro {
+    padding: 56px 40px 32px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.intro-titulo {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #3f463d;
+    margin-bottom: 16px;
+}
+
+.intro-descripcion {
+    font-size: 1.05rem;
+    color: #555555;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+/*parte imagen en grande*/
+.imagen-destacada-contenedor {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 40px;
+}
+
+.imagen-destacada {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/*parte encanto rural*/
+.seccion-encanto {
+    background-color: #ffffff;
+    padding: 60px 40px;
+}
+
+.encanto-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3f463d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.encanto-contenedor {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.encanto-bloque {
+    flex: 1;
+}
+
+.encanto-subtitulo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #3f463d;
+    margin-bottom: 14px;
+}
+
+.encanto-texto {
+    font-size: 0.97rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+/*bloque comodidades*/
+.seccion-comodidades {
+    background-color: #f3f1ee;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.comodidades-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3f463d;
+    margin-bottom: 12px;
+}
+
+.comodidades-descripcion {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 28px;
+}
+
+.comodidades-lista {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.comodidades-elemento {
+    font-size: 1rem;
+    color: #3f463d;
+    padding-left: 24px;
+    position: relative;
+}
+
+.comodidades-elemento::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #e07b39;
+    font-weight: 700;
+}
+
+
+/*galeria de fotos desde la bbdd*/
+.seccion-galeria {
+    background-color: #ffffff;
+    padding: 60px 40px;
+}
+
+.galeria-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3f463d;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.galeria-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.galeria-tarjeta {
+    width: calc(50% - 12px);
+}
+
+.galeria-imagen {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.galeria-descripcion {
+    font-size: 0.95rem;
+    color: #666666;
+    text-align: center;
+}
+
+
+/*mediaquerie responsive movil*/
+@media (max-width: 768px) {
+
+    .seccion-intro {
+        padding: 40px 20px 24px 20px;
+    }
+
+    .intro-titulo {
+        font-size: 1.8rem;
+    }
+
+    .imagen-destacada-contenedor {
+        padding: 0 20px;
+    }
+
+    .imagen-destacada {
+        height: 240px;
+    }
+
+    .seccion-encanto,
+    .seccion-comodidades,
+    .seccion-galeria {
+        padding: 40px 20px;
+    }
+
+    .encanto-contenedor {
+        flex-direction: column;
+    }
+
+    .galeria-tarjeta {
+        width: 100%;
+    }
+}

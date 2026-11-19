@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/public/es/head :: head('Home - Casa Rural', 'Home')}"></head>
+
+<body>
+    <link rel="stylesheet" th:href="@{/css/public/home.css}">
+    <header th:replace="~{fragments/public/es/header :: header}"></header>
+
+    <main>
+        <!--Contenido hero (top)-->
+        <section class="seccion-hero">
+            <div class="hero-contenido">
+                <h1 class="hero-titulo">Bienvenidos a Casa Jorcanvi</h1>
+                <p class="hero-descripcion">Un refugio en plena naturaleza donde descansar, relajarse y
+                        disfrutar</p>
+                <a th:href="@{/casa}" class="hero-boton">Ver galería de imágenes</a>
+            </div>
+        </section>
+
+        <!--Seccion imagenes-->
+        <section class="seccion-galeria">
+            <h2 class="galeria-titulo">Galería de Imagenes</h2>
+            <div class="galeria-contenedor">
+                <img class="galeria-imagen" src="/img/casa1.jpg" alt="Vista exterior casa">
+                <img class="galeria-imagen" src="/img/casa2.jpg" alt="Interior casa">
+                <img class="galeria-imagen" src="/img/casa3.jpg" alt="Entorno natural">
+            </div>
+        </section>
+
+        <!--Seccion tarjetas con la info-->
+        <section class="seccion-caracteristicas">
+            <div class="caracteristicas-contenedor">
+                <div class="tarjeta-info">
+                    <img class="tarjeta-icono" src="/img/home/iconosTarjetas/alojamiento.png" alt="Icono alojamiento">
+                    <h3 class="tarjeta-titulo">Alojamiento Rural</h3>
+                    <p class="tarjeta-texto">Una casa acogedora y totalmente equipada, ideal para grupos o familias, a precio de
+                        campo.</p>
+                </div>
+
+                <div class="tarjeta-info">
+                    <img class="tarjeta-icono" src="/img/home/iconosTarjetas/entorno.png" alt="Icono entorno">
+                    <h3 class="tarjeta-titulo">Entorno Privilegiado</h3>
+                    <p class="tarjeta-texto">Rodeada de montañas, caminos y paisajes únicos. Un lugar perfecto para desconectar y
+                        conectar con la naturaleza.</p>
+                </div>
+
+                <div class="tarjeta-info">
+                    <img class="tarjeta-icono" src="/img/home/iconosTarjetas/tranquilidad.png" alt="Icono tranquilidad">
+                    <h3 class="tarjeta-titulo">Tranquilidad</h3>
+                    <p class="tarjeta-texto">Disfruta de la paz y tranquilidad en un entorno natural, lejos del ruido y de las
+                        prisas diarias.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer th:replace="~{fragments/public/es/footer :: footer}"></footer>
+
+</body>
+</html>

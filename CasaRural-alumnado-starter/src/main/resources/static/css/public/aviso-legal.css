@@ -1,0 +1,86 @@
+/*titulo aviso legal*/
+.seccion-aviso {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.aviso-titulo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #3f463d;
+    margin-bottom: 20px;
+}
+
+.aviso-introduccion {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+
+/*bloques de contenido texto*/
+.aviso-bloque {
+    margin-bottom: 40px;
+}
+
+.aviso-subtitulo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3f463d;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e07b39;
+}
+
+.aviso-texto {
+    font-size: 0.97rem;
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+
+/*datos del titular*/
+.aviso-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aviso-dato {
+    font-size: 0.97rem;
+    color: #555555;
+    line-height: 1.7;
+    padding-left: 16px;
+    border-left: 3px solid #e07b39;
+}
+
+/*unOrdered list */
+.aviso-lista-numerada {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.aviso-elemento {
+    font-size: 0.97rem;
+    color: #555555;
+    line-height: 1.8;
+    list-style-type: decimal;
+}
+
+
+/*diseño responsive movi*/
+@media (max-width: 768px) {
+
+    .seccion-aviso {
+        padding: 40px 20px;
+    }
+
+    .aviso-titulo {
+        font-size: 1.7rem;
+    }
+}

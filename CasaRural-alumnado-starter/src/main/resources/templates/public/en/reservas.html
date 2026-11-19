@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/public/en/head :: head('Reservas - Casa Rural Jorcanvi', 'Reservas')}"></head>
+<body>
+    <link rel="stylesheet" th:href="@{/css/public/reservas.css}">
+    <header th:replace="~{fragments/public/en/header :: header}"></header>
+    <main>
+        <!--intro reservas con contenido -->
+        <section class="seccion-intro-reservas">
+            <h1 class="reservas-titulo">Bookings</h1>
+            <p class="reservas-descripcion">Check availability and call us to book your stay at Casa Jorcanvi. We
+                will be happy to assist you and help you find the ideal dates for your getaway</p>
+        </section>
+
+        <!--Parte de calendario-->
+        <section class="seccion-calendario">
+            <h2 class="calendario-seccion-titulo">Bookings</h2>
+            <div id="contenedor-calendarios" class="contenedor-calendarios">
+            </div>
+            <div class="calendario-leyenda">
+                <span class="leyenda-cuadro"></span>
+                <span class="leyenda-texto">Occupied days</span>
+            </div>
+        </section>
+
+        <!--cta telefono para llamar-->
+        <section class="seccion-cta-reservas">
+            <p class="cta-reservas-texto">Book by calling this number</p>
+            <a href="tel:+34123123123" class="cta-reservas-telefono">+34 123 123 123</a>
+            <p class="cta-reservas-subtexto">We will be happy to help you plan your stay.</p>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/public/en/footer :: footer}"></footer>
+    <script th:src="@{/js/reservas.js}"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/*contenido introduccion reservas */
+.seccion-intro-reservas {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 40px 32px 40px;
+    text-align: center;
+}
+
+.reservas-titulo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #3f463d;
+    margin-bottom: 16px;
+}
+
+.reservas-descripcion {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+/*seccion del calendario general*/
+.seccion-calendario {
+    padding: 40px 40px 56px 40px;
+    background-color: #ffffff;
+}
+
+.calendario-seccion-titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3f463d;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contenedor-calendarios {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*bloques de calendario*/
+.calendario {
+    width: 340px;
+}
+
+.calendario-mes {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3f463d;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.calendario-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendario-cabecera {
+    width: calc(100% / 7);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #3f463d;
+    padding: 8px 0;
+}
+
+.calendario-celda {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: #3f463d;
+    border-radius: 4px;
+}
+
+.calendario-vacia {
+    background-color: transparent;
+}
+
+.calendario-ocupado {
+    background-color: #e07b39;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/*cta telefono*/
+.seccion-cta-reservas {
+    background-color: #e07b39;
+    padding: 48px 40px;
+    text-align: center;
+}
+
+.cta-reservas-texto {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.cta-reservas-telefono {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.cta-reservas-telefono:hover {
+    text-decoration: underline;
+}
+
+.cta-reservas-subtexto {
+    font-size: 0.95rem;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+
+/*diesño responsive movil*/
+@media (max-width: 768px) {
+
+    .seccion-intro-reservas {
+        padding: 40px 20px 24px 20px;
+    }
+
+    .reservas-titulo {
+        font-size: 1.7rem;
+    }
+
+    .seccion-calendario {
+        padding: 32px 20px 40px 20px;
+    }
+
+    .contenedor-calendarios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendario {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .cta-reservas-telefono {
+        font-size: 1.5rem;
+    }
+}
+

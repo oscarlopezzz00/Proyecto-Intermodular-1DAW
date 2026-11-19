@@ -1,0 +1,58 @@
+<footer th:fragment="footer" class="site-footer">
+
+  <!-- CTA NARANJA -->
+  <div class="site-footer__cta-wrap">
+    <div class="container">
+      <div class="footer-cta">
+
+        <div class="footer-cta__left">
+
+          <div class="footer-cta__icon" aria-hidden="true">
+
+          </div>
+
+          <div class="footer-cta__text">
+            <strong>Reserva tu estancia llamando a este número</strong>
+            <span>Atención personalizada. Te esperamos.</span>
+          </div>
+
+        </div>
+
+        <a href="tel:+34123123123" class="footer-cta__phone">
+          +34 123 123 123
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER LEGAL -->
+  <div class="footer">
+    <div class="container footer__content">
+
+      <div class="footer__top">
+
+        <div class="footer__brand-mark">
+        </div>
+
+        <div class="footer__message">
+          <p><strong>Reserva</strong> tu estancia <strong>llamando</strong> a este número</p>
+          <p>Atención personalizada. Te esperamos.</p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>
+          © 2024 Casa Rural Jorcanvi. Todos los derechos reservados.
+          <span class="footer__separator">|</span>
+          <a th:href="@{/aviso-legal}">Aviso legal</a>
+          <span class="footer__separator">|</span>
+          <a th:href="@{/politica-cookies}">Política de cookies</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</footer>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/public/es/head :: head('La casa - Casa Rural', 'La Casa')}"></head>
+
+<body>
+
+    <link rel="stylesheet" th:href="@{/css/public/casa.css}">
+    <header th:replace="~{fragments/public/es/header :: header}"></header>
+
+        <main>
+            <!--Introduccion-->
+            <section class="seccion-intro">
+                <h1 class="intro-titulo">La Casa</h1>
+                <p class="intro-descripcion">Descubre el encanto de nuestra casa rural, un lugar donde la naturaleza y
+                    el confort se unen para ofrecerte una estancia inmejorable.</p>
+            </section>
+
+            <!--imagen grande portada-->
+            <div class="imagen-destacada-contenedor">
+                <img class="imagen-destacada" src="/img/laCasa/casa-principal.jpg" alt="Vista casa rural">
+            </div>
+
+            <!--parte titulo encanto rural-->
+            <section class="seccion-encanto">
+                <h2 class="encanto-titulo">Encanto Rural</h2>
+                <div class="encanto-contenedor">
+
+                    <!--bloque encanto rural-->
+                    <div class="encanto-bloque">
+                        <h3 class="encanto-subtitulo">Encanto Rural</h3>
+                        <p class="encanto-texto">Una casa de piedra con arquitectura típica, restaurada y decorada con
+                            esmero para hacer tu estancia lo más confortable posible. Salón con chimenea, ventanas de madera y vistas únicas
+                            desde el jardín.</p>
+                    </div>
+
+                    <!--bloque salon-->
+                    <div class="encanto-bloque">
+                        <h3 class="encanto-subtitulo">Salón acogedor con chimenea</h3>
+                        <p class="encanto-texto">El corazón de la casa. Un espacio cálido donde relajarse después de un
+                            día de senderismo, disfrutar de buena compañía y sentir el calor de una chimenea de leña.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--bloque comodidades-->
+            <section class="seccion-comodidades">
+                <h2 class="comodidades-titulo">Comodidades</h2>
+                <p class="comodidades-descripcion">Equipado con todo lo necesario para que no te falte de nada durante
+                    tu estancia.</p>
+                <ul class="comodidades-lista">
+                    <li class="comodidades-elemento">Wifi gratuito y TV</li>
+                    <li class="comodidades-elemento">Cocina totalmente equipada</li>
+                    <li class="comodidades-elemento">Ropa de cama y toallas incluidas</li>
+                    <li class="comodidades-elemento">Zona exterior con barbacoa</li>
+                </ul>
+            </section>
+
+
+            <!--Galeria de imagenes?-->
+            <section class="seccion-galeria">
+                <h2 class="galeria-titulo">Galeria de imagenes</h2>
+                <div class="galeria-contenedor">
+                    <div class="galeria-tarjeta" th:each="imagen : ${imagenes}">
+                        <img class="galeria-imagen" th:src="${imagen.url}" alt="Imagen">
+                        <p class="galeria-descripcion" th:text="${imagen.descripcionEs}"></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    <footer th:replace="~{fragments/public/es/footer :: footer}"></footer>
+
+</body>
+</html>

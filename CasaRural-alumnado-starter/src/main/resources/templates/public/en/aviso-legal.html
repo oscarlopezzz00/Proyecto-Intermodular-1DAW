@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/public/en/head :: head('Legal Notice - Casa Rural', 'Aviso legal')}"></head>
+
+<body>
+
+    <link rel="stylesheet" th:href="@{/css/public/aviso-legal.css}">
+    <header th:replace="~{fragments/public/en/header :: header}"></header>
+
+    <main>
+
+        <!--titulo aviso legal-->
+        <section class="seccion-aviso">
+            <h1 class="aviso-titulo">Legal Notice</h1>
+            <p class="aviso-introduccion">This section sets out the legal notice for the Casa Jorcanvi website. The
+                purpose of this notice is to inform users about the terms of use and ownership of the website</p>
+
+            <!-- identificacion del titular -->
+            <div class="aviso-bloque">
+                <h2 class="aviso-subtitulo">Owner Identification</h2>
+                <ul class="aviso-datos">
+                    <li class="aviso-dato"><strong>Owner:</strong> Juan Perez García</li>
+                    <li class="aviso-dato"><strong>Tax ID:</strong> 12345678-A</li>
+                    <li class="aviso-dato"><strong>Address:</strong> Paseo del Río, 47, 05480, Candeleda, Ávila,
+                        España</li>
+                    <li class="aviso-dato"><strong>Contact phone:</strong> +34 123 123 123</li>
+                    <li class="aviso-dato"><strong>Email:</strong> info@casajorcanvi.com</li>
+                </ul>
+            </div>
+
+            <!--bloque condiciones de uso-->
+            <div class="aviso-bloque">
+                <h2 class="aviso-subtitulo">Terms of Use</h2>
+                <p class="aviso-texto">Access to and use of the Casa Jorcanvi website is governed by the following
+                    terms. By accessing and using this website, the user fully accepts the following terms of use.</p>
+
+                <!--bloque de la ordered list-->
+                <ol class="aviso-lista-numerada">
+
+                    <!--elemento 1-->
+                    <li class="aviso-elemento">
+                        <strong>Website Use:</strong> Users agree to use the website appropriately, in accordance
+                        with the law, morality and public order. Any conduct that infringes the rights of Casa Jorcanvi or third parties,
+                        or that may damage, overload or impair the functioning of the website, is strictly prohibited.
+                    </li>
+
+                    <!--elemto 2-->
+                    <li class="aviso-elemento">
+                        <strong>Intellectual Property:</strong>All website content, including texts, images and
+                        logos, is the property of Casa Jorcanvi or its respective owners and is protected by intellectual property
+                        regulations.
+                    </li>
+
+                    <!--elemento 3-->
+                    <li class="aviso-elemento">
+                        <strong>Liability:</strong> Casa Jorcanvi accepts no responsibility for misuse of the
+                        website or for any external content linked from it.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <footer th:replace="~{fragments/public/en/footer :: footer}"></footer>
+
+</body>
+</html>

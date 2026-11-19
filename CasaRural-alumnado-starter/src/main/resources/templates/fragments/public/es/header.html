@@ -1,0 +1,25 @@
+<header th:fragment="header" class="header" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="container header__content">
+
+        <a th:href="@{/}" class="logo">
+
+            <span class="logo__text">
+                <span class="logo__name">Casa</span>
+                <span class="logo__name--second">Jorcanvi</span>
+            </span>
+        </a>
+
+        <nav class="nav">
+            <a th:href="@{/}" class="active">Inicio</a>
+            <a th:href="@{/casa}">La Casa</a>
+            <a th:href="@{/reservas}">Reservas</a>
+            <a th:href="@{/contacto}">Contacto</a>
+            <a th:href="@{/en}">EN</a>
+        </nav>
+
+        <a href="tel:+34123123123" class="header__phone">
+            <span>+34 123 123 123</span>
+        </a>
+
+    </div>
+</header>
